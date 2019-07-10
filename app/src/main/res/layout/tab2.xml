@@ -36,58 +36,41 @@
                             android:id="@+id/data"/>
                 </android.support.design.widget.TextInputLayout>
 
-                <LinearLayout
-                        android:layout_width="wrap_content"
+                <Button android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:layout_marginTop="10dp"
-                        android:orientation="horizontal">
+                android:background="@color/colorPrimary"
+                        android:id="@+id/recordingAudio"
+                android:text="Gravar Áudio"
+                android:drawableLeft="@android:drawable/presence_audio_online"
+                        android:textColor="#ffffff"
+                android:paddingLeft="16dp"
+                android:layout_marginBottom="10dp"/>
 
-                    <android.support.design.widget.FloatingActionButton
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            app:srcCompat="@android:drawable/presence_audio_online"
-                            android:backgroundTint="@color/colorPrimary"
-                            app:fabSize="normal"
-                            android:tint="#ffffff"
-                            android:id="@+id/recordingAudio"
-                            app:rippleColor="@color/colorAccent"
-                            android:layout_marginRight="10dp"
-                    />
+                <Button android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary"
+                        android:text="Ouvir Áudio"
+                        android:drawableLeft="@android:drawable/ic_media_play"
+                        android:textColor="#ffffff"
+                        android:paddingLeft="16dp"
+                        android:layout_marginBottom="10dp"/>
 
-                    <android.support.design.widget.FloatingActionButton
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            app:srcCompat="@android:drawable/ic_media_play"
-                            android:backgroundTint="@color/colorPrimary"
-                            app:fabSize="normal"
-                            android:tint="#ffffff"
-                            app:rippleColor="@color/colorAccent"
-                            android:layout_marginRight="10dp"
-                    />
-
-                    <android.support.design.widget.FloatingActionButton
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            app:srcCompat="@android:drawable/ic_menu_save"
-                            android:backgroundTint="@color/colorPrimary"
-                            app:fabSize="normal"
-                            android:tint="#ffffff"
-                            app:rippleColor="@color/colorAccent"
-                            android:layout_marginRight="10dp"
-                            />
-
-                    <android.support.design.widget.FloatingActionButton
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            app:srcCompat="@android:drawable/ic_delete"
-                            android:backgroundTint="@color/colorPrimary"
-                            app:fabSize="normal"
-                            android:tint="#ffffff"
-                            app:rippleColor="@color/colorAccent"
-                    />
-
-                </LinearLayout>
+                <Button android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary"
+                        android:text="Salvar"
+                        android:drawableLeft="@android:drawable/ic_menu_save"
+                        android:textColor="#ffffff"
+                        android:paddingLeft="16dp"
+                        android:layout_marginBottom="10dp"/>
+                <Button android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary"
+                        android:text="Cancelar"
+                        android:drawableLeft="@android:drawable/ic_menu_close_clear_cancel"
+                        android:textColor="#ffffff"
+                        android:paddingLeft="16dp"
+                        android:layout_marginBottom="10dp"/>
 
             </LinearLayout>
 
