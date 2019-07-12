@@ -33,6 +33,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:hint="Data"
+                            android:inputType="date"
                             android:id="@+id/data"/>
                 </android.support.design.widget.TextInputLayout>
 
@@ -47,6 +48,7 @@
                     android:visibility="invisible"
                     android:id="@+id/descricao"
                     android:hint="Descrição"
+                                                                     android:layout_marginBottom="15dp"
                     android:enabled="false"/>
 
                 </android.support.design.widget.TextInputLayout>
@@ -78,6 +80,7 @@
                         android:text="Salvar"
                         android:drawableLeft="@android:drawable/ic_menu_save"
                         android:textColor="#ffffff"
+                        android:id="@+id/salvarNota"
                         android:paddingLeft="16dp"
                         android:layout_marginBottom="10dp"/>
                 <Button android:layout_width="match_parent"
@@ -87,6 +90,7 @@
                         android:drawableLeft="@android:drawable/ic_menu_close_clear_cancel"
                         android:textColor="#ffffff"
                         android:paddingLeft="16dp"
+                        android:id="@+id/cancelarNota"
                         android:layout_marginBottom="10dp"/>
 
             </LinearLayout>
