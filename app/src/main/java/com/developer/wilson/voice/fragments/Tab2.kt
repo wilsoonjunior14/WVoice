@@ -120,6 +120,8 @@ class Tab2: Fragment(), RecognitionListener, OnInitListener {
             if (!this.nota.getDescricao().equals("")){
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                     tts.speak(this.nota.getDescricao(), TextToSpeech.QUEUE_FLUSH, null, "")
+                }else{
+                    Toast.makeText(this.context, "Seu dispositivo não tem suporte a reprodutor de texto", Toast.LENGTH_LONG).show()
                 }
             }else{
                 Toast.makeText(v.context, "Nenhum áudio foi encontrado", Toast.LENGTH_LONG).show()

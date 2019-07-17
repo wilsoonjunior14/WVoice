@@ -47,6 +47,8 @@
                                                                      android:layout_height="wrap_content"
                     android:visibility="invisible"
                     android:id="@+id/descricao"
+                                                                     android:maxLines="10"
+                                                                     android:inputType="text|textCapSentences|textMultiLine"
                     android:hint="Descrição"
                                                                      android:layout_marginBottom="15dp"
                     android:enabled="false"/>
